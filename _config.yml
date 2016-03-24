@@ -11,7 +11,7 @@ email: liuzhenglaichn@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I'm on my way to a full-stack dev, will share some I've learned thru the way. Hope you enjoy it.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://liuzhenglaichn.github.io" # the base hostname & protocol for your site
 github_username:  lzl124631x
 
 # Build settings

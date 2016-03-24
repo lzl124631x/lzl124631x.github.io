@@ -15,7 +15,7 @@ categories: design
 
 # 效果图
 
-![效果图](/images/2016-02-18-my first ps work/wifi.jpg)
+![效果图](/images/2016-02-18-my-first-ps-work/wifi.jpg)
 
 # 过程中遇到的问题
 
@@ -46,13 +46,13 @@ photoshop怎么让图层在页面居中PS图层居中的方法
 
 ## [超实用！PHOTOSHOP基础形状新手入门指南全科普！](http://www.uisdc.com/photoshop-shape-tool-guide)
 
-![Share](/images/2016-02-18-my first ps work/share.jpg)  
-![Cloud](/images/2016-02-18-my first ps work/cloud.jpg)  
-![Record](/images/2016-02-18-my first ps work/Record.jpg)  
-![NoRecording](/images/2016-02-18-my first ps work/NoRecording.jpg)  
-![Chat](/images/2016-02-18-my first ps work/Chat.jpg)  
-![Chrome](/images/2016-02-18-my first ps work/ChromeIcon.jpg)
+![Share](/images/2016-02-18-my-first-ps-work/share.jpg)  
+![Cloud](/images/2016-02-18-my-first-ps-work/cloud.jpg)  
+![Record](/images/2016-02-18-my-first-ps-work/Record.jpg)  
+![NoRecording](/images/2016-02-18-my-first-ps-work/NoRecording.jpg)  
+![Chat](/images/2016-02-18-my-first-ps-work/Chat.jpg)  
+![Chrome](/images/2016-02-18-my-first-ps-work/ChromeIcon.jpg)
 
 ## [绘制一枚酷炫的多彩圆环【PS教程】](http://www.xueui.cn/tutorials/draw-a-cool-colorful-ring-ps.html)
 
-![Colorful Ring](/images/2016-02-18-my first ps work/ring.jpg)
+![Colorful Ring](/images/2016-02-18-my-first-ps-work/ring.jpg)
