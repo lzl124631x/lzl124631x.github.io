@@ -48,10 +48,10 @@ photoshop怎么让图层在页面居中PS图层居中的方法
 
 ![Share](/images/2016-02-18-my-first-ps-work/share.jpg)  
 ![Cloud](/images/2016-02-18-my-first-ps-work/cloud.jpg)  
-![Record](/images/2016-02-18-my-first-ps-work/Record.jpg)  
-![NoRecording](/images/2016-02-18-my-first-ps-work/NoRecording.jpg)  
-![Chat](/images/2016-02-18-my-first-ps-work/Chat.jpg)  
-![Chrome](/images/2016-02-18-my-first-ps-work/ChromeIcon.jpg)
+![Record](/images/2016-02-18-my-first-ps-work/record.jpg)  
+![NoRecording](/images/2016-02-18-my-first-ps-work/norecording.jpg)  
+![Chat](/images/2016-02-18-my-first-ps-work/chat.jpg)  
+![Chrome](/images/2016-02-18-my-first-ps-work/chromeicon.jpg)
 
 ## [绘制一枚酷炫的多彩圆环【PS教程】](http://www.xueui.cn/tutorials/draw-a-cool-colorful-ring-ps.html)
 
