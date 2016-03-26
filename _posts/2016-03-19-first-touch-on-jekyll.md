@@ -60,3 +60,5 @@ at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
 ```
 
 从<http://rubyinstaller.org/downloads>中下载DevKit安装exe, 然后按照<http://github.com/oneclick/rubyinstaller/wiki/Development-Kit>中的方法去安装即可. 简单来说就是解压后`ruby dk.rb init`, `ruby dk.rb install`.
+
+# 如何支持`==highlight==`?
