@@ -75,4 +75,6 @@ Mozilla.5.0 (Windows Phone 10.0; Android 4.2.1; XIAOMITEST; MI4) AppleWebKit/537
 var isInWeChat = /(micromessenger|webbrowser)/.test(navigator.userAgent.toLocaleLowerCase());
 ```
 
+如果你感兴趣的话, 可以通过打开 <http://whatsmyuseragent.com/> 查看你的UA.
+
 参考: [微信内置浏览器UserAgent的判断](https://dearb.me/archive/2013-10-30/weixin-browser-user-agent/)
