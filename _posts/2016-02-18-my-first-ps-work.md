@@ -2,7 +2,7 @@
 layout: post
 title:  "我Photoshop的第一个作品"
 date:   2016-02-24 00:00:00 +0800
-categories: design
+categories: Design
 ---
 
 想学Photoshop好久了, 作为一个想成为"将计算机技术和艺术结合起来的人", 不会Photoshop感觉说不过去.

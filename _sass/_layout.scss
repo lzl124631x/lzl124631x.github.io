@@ -301,4 +301,43 @@
         left: .5em;
         opacity: 1;
     }
+
+
+    .my-comment {
+      background-color: #B4EB7C;
+      display: inline-block;
+      border-radius: .2em;
+      padding: .5em 1em;
+      position: relative;
+      margin: 1em 0;
+    }
+
+    .my-comment:before,
+    .my-comment:after {
+      position: absolute;
+      top: 14px;
+      right: 100%;
+      border: 6px solid transparent;
+      content: " ";
+    }
+
+    .my-comment:after {
+      border-right-color: #B4EB7C;
+    }
+
+    a.demo-link {
+      display: inline-block;
+      color: #fff;
+      background-color: #3498db;
+      border-radius: .3em;
+      padding: .5em 1em;
+    }
+
+    .todo {
+        background-color: #FF4539;
+        color: #fff;
+        padding: .5em 1em;
+        font-size: .8em;
+        border-radius: .2em;
+    }
 }

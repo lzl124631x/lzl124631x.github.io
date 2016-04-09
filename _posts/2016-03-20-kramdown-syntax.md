@@ -2,7 +2,7 @@
 layout: post
 title:  "Kramdown Syntax"
 date:   March 20, 2016 11:23 PM
-categories: blog
+categories: Markdown, Kramdown
 ---
 
 ## [Headers](http://kramdown.gettalong.org/syntax.html#headers)

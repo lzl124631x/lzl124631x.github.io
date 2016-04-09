@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript中的自调用函数"
 date:  March 30, 2016 4:58 PM
-categories: blog
+categories: JavaScript
 ---
 
 # 自调用函数

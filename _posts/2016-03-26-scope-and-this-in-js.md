@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Scope in JavaScript"
-date:   March 20, 2016 11:23 PM
-categories: blog
+date:   March 26, 2016 9:28 PM
+categories: JavaScript
 ---
 
 本文为[JS核心系列：浅谈函数的作用域](http://www.cnblogs.com/onepixel/p/5036369.html)的笔记
