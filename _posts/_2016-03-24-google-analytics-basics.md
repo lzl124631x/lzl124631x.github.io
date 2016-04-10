@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Analytics基础"
 date:   March 24, 2016 11:13 PM
-tags: blog
+tags: GoogleAnalytics
 ---
 
 [Google Analytics基础教程](http://v.youku.com/v_show/id_XMzM1ODU2MzAw.html)

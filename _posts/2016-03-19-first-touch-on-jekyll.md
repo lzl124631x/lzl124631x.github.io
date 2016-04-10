@@ -2,10 +2,11 @@
 layout: post
 title:  "Jekyll初接触问题汇总"
 date:   March 19, 2016 10:46 PM
-tags: blog
+tags: Jekyll
 ---
 
 # 在Jekyll中遇到的一些markdown问题
+
 Jekyll的markdown processor默认是kramdown. 经测试, 它:
 1. 不支持`$1_2$`这种数学符号
 2. `#`与标题之间必须有空格

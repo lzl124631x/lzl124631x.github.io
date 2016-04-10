@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown属性支持测试"
 date:   March 19, 2016 10:51 PM
-tags: blog
+tags: Markdown
 ---
 
 文字

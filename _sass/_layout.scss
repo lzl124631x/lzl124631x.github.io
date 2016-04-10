@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -96,7 +96,7 @@
 /**
  * Site footer
  */
-.site-footer {
+ .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -166,7 +166,7 @@
 /**
  * Page content
  */
-.page-content {
+ .page-content {
     padding: $spacing-unit 0;
 }
 
@@ -180,8 +180,7 @@
 
     > li {
         margin-top: -1px;
-        border: solid 1px #ccc;
-        padding: $spacing-unit;
+        border: dashed 1px #ddd;
 
         &:hover {
             border-color: #169fe6;
@@ -190,6 +189,8 @@
         }
 
         .post-link {
+            display: block;
+            padding: $spacing-unit;
             text-decoration: none;
             color: #333;
             transition: .2s color ease-in-out;
@@ -201,11 +202,6 @@
 
         .post-excerpt {
             font-size: .8em;
-        }
-
-        .post-link {
-            display: block;
-            font-size: 24px;
         }
 
         .post-meta {
@@ -229,127 +225,132 @@
 /**
  * Posts
  */
-.post-header {
-    margin-bottom: $spacing-unit;
+ .post {
+    padding: 2em 1em;
+    border: dashed 1px #ddd;
+    border-radius: 1em;
 
-    .post-title {
-        font-size: 2em;
-        letter-spacing: -1px;
-        line-height: 1;
-        text-align: center;
+    .post-header {
+        margin-bottom: $spacing-unit;
+
+        .post-title {
+            font-size: 2em;
+            letter-spacing: -1px;
+            line-height: 1;
+            text-align: center;
+        }
+
+        @include media-query($on-laptop) {
+            font-size: 36px;
+        }
+
+        .post-meta {
+            text-align: center;
+            font-size: $small-font-size;
+            color: $grey-color;
+        }
     }
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    .post-content {
+        margin-bottom: $spacing-unit;
 
-    .post-meta {
-        text-align: center;
-        font-size: $small-font-size;
-        color: $grey-color;
-    }
-}
+        h1,
+        h2,
+        h3 {
+            margin: 1em 0 .5em;
+        }
 
-.post-content {
-    margin-bottom: $spacing-unit;
+        h1 {
+            font-size: 1.6em;
+            border-bottom: dashed 1px #dfdfdf;
+        }
 
-    h1,
-    h2,
-    h3 {
-        margin: 1em 0 .5em;
-    }
+        h1:after {
+            content: '#';
+        }
 
-    h1 {
-        font-size: 1.6em;
-        border-bottom: dashed 1px #dfdfdf;
-    }
+        h2 {
+            font-size: 1.4em;
+            border: none;
+        }
 
-    h1:after {
-        content: '#';
-    }
+        h2:after {
+            content: '##';
+        }
 
-    h2 {
-        font-size: 1.4em;
-        border: none;
-    }
+        h3 {
+            font-size: 1.2em;
+            border: none;
+        }
 
-    h2:after {
-        content: '##';
-    }
+        h3:after {
+            content: '###';
+        }
 
-    h3 {
-        font-size: 1.2em;
-        border: none;
-    }
+        h4 {
+            font-size: 1.1em;
+            border: none;
+        }
 
-    h3:after {
-        content: '###';
-    }
+        h4:after {
+            content: '####';
+        }
 
-    h4 {
-        font-size: 1.1em;
-        border: none;
-    }
+        h1:after,
+        h2:after,
+        h3:after,
+        h4:after {
+            color: #888;
+            position: relative;
+            left: .25em;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
 
-    h4:after {
-        content: '####';
-    }
-
-    h1:after,
-    h2:after,
-    h3:after,
-    h4:after {
-        color: #888;
-        position: relative;
-        left: .25em;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-    }
-
-    h1:hover:after,
-    h2:hover:after,
-    h3:hover:after,
-    h4:hover:after {
-        left: .5em;
-        opacity: 1;
-    }
+        h1:hover:after,
+        h2:hover:after,
+        h3:hover:after,
+        h4:hover:after {
+            left: .5em;
+            opacity: 1;
+        }
 
 
-    .my-comment {
-      background-color: #B4EB7C;
-      display: inline-block;
-      border-radius: .2em;
-      padding: .5em 1em;
-      position: relative;
-      margin: 1em 0;
-    }
+        .my-comment {
+          background-color: #B4EB7C;
+          display: inline-block;
+          border-radius: .2em;
+          padding: .5em 1em;
+          position: relative;
+          margin: 1em 0;
+      }
 
-    .my-comment:before,
-    .my-comment:after {
-      position: absolute;
-      top: 14px;
-      right: 100%;
-      border: 6px solid transparent;
-      content: " ";
-    }
+      .my-comment:before,
+      .my-comment:after {
+          position: absolute;
+          top: 14px;
+          right: 100%;
+          border: 6px solid transparent;
+          content: " ";
+      }
 
-    .my-comment:after {
-      border-right-color: #B4EB7C;
-    }
+      .my-comment:after {
+          border-right-color: #B4EB7C;
+      }
 
-    a.demo-link {
-      display: inline-block;
-      color: #fff;
-      background-color: #3498db;
-      border-radius: .3em;
-      padding: .5em 1em;
-    }
+      a.demo-link {
+          display: inline-block;
+          color: #fff;
+          background-color: #3498db;
+          border-radius: .3em;
+          padding: .5em 1em;
+      }
 
-    .todo {
+      .todo {
         background-color: #FF4539;
         color: #fff;
         padding: .5em 1em;
@@ -361,7 +362,8 @@
       margin: 1em 0;
       border: 0;
       border-top: solid .5em #eaeff3;
-    }
+  }
+}
 }
 
 a.prev-post,
@@ -371,6 +373,7 @@ a.next-post {
     background-color: #3498db;
     border-radius: .3em;
     padding: .5em 1em;
+    margin: 1em 0;
 }
 
 a.prev-post {
