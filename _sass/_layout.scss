@@ -217,10 +217,13 @@
 
 .post-tags span {
     border-radius: .3em;
-    background-color: #aaa;
     padding: .2em .3em;
-    color: #fff;
     margin-right: .3em;
+    transition: background-color, .2s, ease-in-out;
+
+    &:hover {
+        background-color: #ddd;
+    }
 }
 
 /**
@@ -358,5 +361,30 @@
       margin: 1em 0;
       border: 0;
       border-top: solid .5em #eaeff3;
+    }
+}
+
+a.prev-post,
+a.next-post {
+    display: inline-block;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: .3em;
+    padding: .5em 1em;
+}
+
+a.prev-post {
+    float: left;
+
+    &:before {
+        content: '\2039';
+    }
+}
+
+a.next-post {
+    float: right;
+
+    &:after {
+        content: '\203A';
     }
 }
