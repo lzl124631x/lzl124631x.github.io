@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Permutation Index"
 date:   2015-12-28 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 197. Permutation Index (Easy)](http://www.lintcode.com/problem/permutation-index)

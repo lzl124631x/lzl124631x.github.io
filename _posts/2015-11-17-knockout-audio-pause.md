@@ -2,7 +2,7 @@
 layout: post
 title:  "Knockout绑定audio的pause事件导致音频无法停止"
 date:   2015-11-17 00:00:00 +0800
-categories: OJ
+tags: [JavaScript, Knockout]
 ---
 
 

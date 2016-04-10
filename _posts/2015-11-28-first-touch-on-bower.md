@@ -2,7 +2,7 @@
 layout: post
 title:  "bower初接触"
 date:   2015-11-28 00:00:00 +0800
-categories: bower
+tags: bower
 ---
 
 之前从Steve Sanderson的博文[Architecting large Single Page Applications with Knockout.js](http://blog.stevensanderson.com/2014/06/11/architecting-large-single-page-applications-with-knockout-js/)中学习了用[Yeoman](http://yeoman.io/)创建Knockout的Single Page Application(SPA)的方法. Yeoman这个Scaffolding工具使用Bower安装各种包(Package). 在生成的SPA的根目录中可以看到.bowerrc文件, 该文件用来对bower进行设置, 如我这里可以看到简单的

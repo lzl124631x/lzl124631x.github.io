@@ -2,7 +2,7 @@
 layout: post
 title:  "Web Development Terms"
 date:   2015-11-26 00:00:00 +0800
-categories: FrontEnd, JavaScript
+tags: FrontEnd JavaScript
 ---
 
 I've come across lots of terms while learning web development. I'm feeling myself overwhelmed. Here I just list all the terms I met along the way.

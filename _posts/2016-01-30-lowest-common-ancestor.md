@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Lowest Common Ancestor"
 date:   2016-01-30 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 88. Lowest Common Ancestor (Medium)](http://www.lintcode.com/en/problem/lowest-common-ancestor/)

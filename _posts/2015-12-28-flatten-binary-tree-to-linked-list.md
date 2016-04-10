@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Flatten Binary Tree to Linked List"
 date:   2015-12-28 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [114. Flatten Binary Tree to Linked List (Medium)](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)

@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Super Ugly Number"
 date:   2015-12-05 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)

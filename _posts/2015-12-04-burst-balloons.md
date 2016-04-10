@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Burst Balloons"
 date:   2015-12-04 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [Burst Balloons (Medium)](https://leetcode.com/problems/burst-balloons/)

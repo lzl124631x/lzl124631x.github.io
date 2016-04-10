@@ -2,7 +2,7 @@
 layout: post
 title:  "关于fastclick.js"
 date:   2016-02-16 00:00:00 +0800
-categories: JavaScript, Fastclick
+tags: JavaScript Fastclick
 ---
 
 官网： [Fastclick on Github](https://github.com/ftlabs/fastclick)

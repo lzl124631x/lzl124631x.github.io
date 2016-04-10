@@ -2,7 +2,7 @@
 layout: post
 title:  "just so you're clear"
 date:   2015-11-21 00:00:00 +0800
-categories: English
+tags: English
 ---
 
 

@@ -16,7 +16,7 @@ layout: default
       </h2>
 
       <div class="post-excerpt">
-        {{ post.excerpt }}
+        Exerpt: {{ post.excerpt| strip_html }}
       </div>
     </li>
     {% endfor %}
@@ -24,4 +24,9 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
+  <div class="post-tags">Tags: 
+    {% for tag in site.tags %}
+    <span>{{ tag[0] }}</span>
+    {% endfor %}
+  </div>
 </div>

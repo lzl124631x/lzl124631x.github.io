@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Wildcard Matching (Hard)"
 date:   2016-02-24 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 192. Wildcard Matching (Hard)](http://www.lintcode.com/en/problem/wildcard-matching/#)  

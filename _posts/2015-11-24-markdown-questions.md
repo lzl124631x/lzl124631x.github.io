@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown各种小问题汇总"
 date:   2015-11-24 00:00:00 +0800
-categories: Markdown
+tags: Markdown
 ---
 
 # 如何分割Quote?

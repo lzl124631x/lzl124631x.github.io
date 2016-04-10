@@ -2,7 +2,7 @@
 layout: post
 title:  "[LeetCode] Range Sum Query - Immutable"
 date:   2015-12-20 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)

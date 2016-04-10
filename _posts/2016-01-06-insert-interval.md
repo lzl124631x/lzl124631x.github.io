@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Insert Interval"
 date:   2016-01-06 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 

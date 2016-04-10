@@ -2,7 +2,7 @@
 layout: post
 title:  "iOS设备下添加button的按下效果"
 date:   2015-11-24 00:00:00 +0800
-categories: FrontEnd
+tags: FrontEnd
 ---
 
 在触屏上, button的按下效果用`:active`触发, 但是我发现iOS设备上`:active`效果并没有生效. [:active pseudo-class doesn't work in mobile safari](http://stackoverflow.com/questions/3885018/active-pseudo-class-doesnt-work-in-mobile-safari)告诉我只要:

@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Additive Number"
 date:   2015-12-20 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [306. Additive Number](https://leetcode.com/problems/additive-number/)

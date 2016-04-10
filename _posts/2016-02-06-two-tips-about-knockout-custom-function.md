@@ -2,7 +2,7 @@
 layout: post
 title:  "两个有关Knockout自定义拓展方法fn的小技巧"
 date:   2016-02-06 00:00:00 +0800
-categories: JavaScript, Knockout
+tags: JavaScript Knockout
 ---
 
 # 让observable自增/自减

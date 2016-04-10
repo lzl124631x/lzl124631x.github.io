@@ -2,7 +2,7 @@
 layout: post
 title:  "Closure in Javascript"
 date:   March 26, 2016 9:28 PM
-categories: JavaScript
+tags: JavaScript
 ---
 
 本文为一些有关JS闭包的笔记.

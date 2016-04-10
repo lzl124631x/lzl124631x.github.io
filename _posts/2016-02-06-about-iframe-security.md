@@ -2,7 +2,7 @@
 layout: post
 title:  "iframe的安全问题"
 date:   2016-02-06 00:00:00 +0800
-categories: HTML
+tags: HTML
 ---
 
 今天尝试在`iframe`中嵌入外部网站, 碰到了一些小问题.

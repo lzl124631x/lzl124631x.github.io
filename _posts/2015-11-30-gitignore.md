@@ -2,7 +2,7 @@
 layout: post
 title:  "文件已经加入.gitignore但是vs并没有显示文件处于ignore状态"
 date:   2015-11-30 00:00:00 +0800
-categories: git
+tags: git
 ---
 
 在VS2015的项目文件中看到某些文件的状态比较特殊, 前面被标记了红色的标志, 如下图.

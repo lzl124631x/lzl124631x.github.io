@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll初接触问题汇总"
 date:   March 19, 2016 10:46 PM
-categories: blog
+tags: blog
 ---
 
 # 在Jekyll中遇到的一些markdown问题
@@ -65,3 +65,9 @@ at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
 从<http://rubyinstaller.org/downloads>中下载DevKit安装exe, 然后按照<http://github.com/oneclick/rubyinstaller/wiki/Development-Kit>中的方法去安装即可. 简单来说就是解压后`ruby dk.rb init`, `ruby dk.rb install`.
 
 # 如何支持`==highlight==`?
+
+# jekyll中的categories和tags有什么区别?
+
+[What's the difference between Categories and Tags in Jekyll?](http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll)
+
+跟我观察的结果一样: categories会导致url变化, 但是tags不会.

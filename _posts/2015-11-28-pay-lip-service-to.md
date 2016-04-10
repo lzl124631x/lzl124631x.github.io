@@ -2,7 +2,7 @@
 layout: post
 title:  "pay lip service to"
 date:   2015-11-28 00:00:00 +0800
-categories: English
+tags: English
 ---
 
 [Understanding Progressive Enhancement](http://alistapart.com/article/understandingprogressiveenhancement)中看到了这句话:  

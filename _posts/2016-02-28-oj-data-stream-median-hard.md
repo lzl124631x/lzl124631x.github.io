@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Data Stream Median (Hard)"
 date:   2016-02-28 15:02:28 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 81. Data Stream Median (Hard)](http://www.lintcode.com/en/problem/data-stream-median/)

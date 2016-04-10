@@ -2,7 +2,7 @@
 layout: post
 title:  "设置VS2015上关闭和打开tab快捷键"
 date:   2015-11-17 00:00:00 +0800
-categories: VisualStudio
+tags: VisualStudio
 ---
 
 
@@ -20,7 +20,7 @@ Ref: [Re-open closed tab (undo close) in Visual Studio 2013?](http://stackoverfl
 ---
 
 # 禁止Productivity Power Tools修改Tab颜色
-安装完Productivity Power Tools之后我发现Tab的颜色变了, 感觉难看想改回去:
+	安装完Productivity Power Tools之后我发现Tab的颜色变了, 感觉难看想改回去:
 
 Tools->Options->Productivity Power Tools->Custom Document Well->Color Coding.
 

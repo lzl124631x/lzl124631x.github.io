@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Count of Smaller Numbers After Self"
 date:   2015-12-20 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)

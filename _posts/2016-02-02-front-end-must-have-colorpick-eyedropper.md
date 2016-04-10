@@ -2,7 +2,7 @@
 layout: post
 title:  "方便的Chrome取色插件ColorPick Eyedropper [设计, FE必备]"
 date:   2016-02-02 00:00:00 +0800
-categories: FrontEnd, Design
+tags: FrontEnd Design
 ---
 
 最近在和Design合作开发, 她发过来的原型图有各种各样色配色, 不想让她一个一个地标记颜色, 嫌效率低. 于是自己找到一款方便的Chrome取色插件, 叫做ColorPick Eyedropper.

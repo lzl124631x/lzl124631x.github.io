@@ -2,7 +2,7 @@
 layout: post
 title:  "on the wane"
 date:   2015-11-26 00:00:00 +0800
-categories: English
+tags: English
 ---
 
 从文章[PHP, Once The Web's Favorite Programming Language, Is On The Wane](http://readwrite.com/2014/08/11/why-learn-php)看到on the wane的说法.

@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Search for a Range"
 date:   2016-01-28 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 61. Search for a Range (Medium)](http://www.lintcode.com/en/problem/search-for-a-range/)

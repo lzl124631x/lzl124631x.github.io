@@ -2,7 +2,7 @@
 layout: post
 title:  "在html中嵌入markdown"
 date:   2015-11-23 00:00:00 +0800
-categories: Markdown
+tags: Markdown
 ---
 
 

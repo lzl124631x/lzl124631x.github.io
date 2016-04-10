@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Matrix Zigzag Traversal"
 date:   2016-01-08 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode #46. Matrix Zigzag Traversal (Easy)](http://www.lintcode.com/en/problem/matrix-zigzag-traversal/)

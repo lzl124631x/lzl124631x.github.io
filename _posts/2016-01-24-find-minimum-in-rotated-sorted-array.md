@@ -2,7 +2,7 @@
 layout: post
 title:  "[OJ] Find Minimum in Rotated Sorted Array"
 date:   2016-01-24 00:00:00 +0800
-categories: OJ
+tags: OJ
 ---
 
 [LintCode 159.  Find Minimum in Rotated Sorted Array (Medium)](http://www.lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/)

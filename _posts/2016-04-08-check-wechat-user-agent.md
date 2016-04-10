@@ -2,7 +2,7 @@
 layout: post
 title:  "判断微信内置浏览器的UserAgent"
 date: April 8, 2016 11:23 PM
-categories: WeChat
+tags: WeChat
 ---
 
 要区分用户是通过"微信内置浏览器"还是"原生浏览器"打开的WebApp, 可以通过`navigator.userAgent`来进行判断.
@@ -77,4 +77,6 @@ var isInWeChat = /(micromessenger|webbrowser)/.test(navigator.userAgent.toLocale
 
 如果你感兴趣的话, 可以通过打开 <http://whatsmyuseragent.com/> 查看你的UA.
 
-参考: [微信内置浏览器UserAgent的判断](https://dearb.me/archive/2013-10-30/weixin-browser-user-agent/)
+# 参考
+
+[微信内置浏览器UserAgent的判断](https://dearb.me/archive/2013-10-30/weixin-browser-user-agent/)

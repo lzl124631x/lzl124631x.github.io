@@ -2,7 +2,7 @@
 layout: post
 title:  "Button with Hover Effect (Learned from 百度脑图)"
 date:   2015-11-26 00:00:00 +0800
-categories: FrontEnd, CSS
+tags: FrontEnd CSS
 ---
 
 今天想学学PM的技能, 打开了[百度脑图](http://naotu.baidu.com/)的网站, 看到中间那个按键的hover效果蛮好看, 遂学习一下.
