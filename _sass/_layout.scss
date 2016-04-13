@@ -181,6 +181,15 @@
     > li {
         margin-top: -1px;
         border: dashed 1px #ddd;
+        &:first-of-type {
+            border-top-left-radius: $default-border-radius;
+            border-top-right-radius: $default-border-radius;
+        }
+
+        &:last-of-type {
+            border-bottom-left-radius: $default-border-radius;
+            border-bottom-right-radius: $default-border-radius;
+        }
 
         &:hover {
             border-color: #169fe6;
@@ -228,7 +237,7 @@
  .post {
     padding: 2em 1em;
     border: dashed 1px #ddd;
-    border-radius: 1em;
+    border-radius: $default-border-radius;
 
     .post-header {
         margin-bottom: $spacing-unit;
