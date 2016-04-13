@@ -88,6 +88,39 @@ var x = function() {
 
 综上, **在每句赋值语句后面加上`;`号是一个很重要的好习惯**!
 
+# 自调用函数前面的`;`
+
+*2016/4/14更新*
+
+今天瞟了一眼[platform.js](https://github.com/bestiejs/platform.js)的源代码, 看到最外层是
+
+```
+;(function() {
+  // function body...
+}.call(this));
+```
+
+[SO了一下](http://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function), 这是一种更加保险的方式.
+
+假设两个文件的内容分别是:
+
+```
+// File A
+(function(){console.log(1);})()
+// File B
+(function(){console.log(2);})()
+```
+
+那么这两个文件打包到一起就会报错
+
+```
+(function(){console.log(1);})()(function(){console.log(2);})()
+// Uncaught TypeError: (intermediate value)(...) is not a function(…)
+```
+
+当然, 这个错误也是由于两个文件中不好的代码习惯导致的--就是最后没有加`;`. 而在`(function...`前面写上`;`就可以100%确保自调用函数的正常执行.
+
+
 # 参考
 
 1. [Does omitting semicolons affect performance in JavaScript?](http://stackoverflow.com/questions/14379946/does-omitting-semicolons-affect-performance-in-javascript)
