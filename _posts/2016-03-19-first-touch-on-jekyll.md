@@ -15,6 +15,7 @@ Jekyll的markdown processor默认是kramdown. 经测试, 它:
 5. [[笔记] 走进 Pocket，看看只有 20 位员工的 Pocket 是如何搞定 2000 万用户的](/startup/2016/01/24/pocket.html)中, 列表中的引用无法正确显示.
 6. [两个有关Knockout自定义拓展方法fn的小技巧](/javascript,/knockout/2016/02/06/two-tips-about-knockout-custom-function.html)中, 列表中的代码块将一个完整的列表分割成了两部分.
 7. 在Matrix Zigzag Traversal中, cpp代码中有两个连着的`{`, 结果报错`Liquid syntax error`.
+8. 标题中的MD代码为什么不被解析?
 
 自己用haroopad用得很顺手, 所以这些习惯都是haroopad惯出来的.
 

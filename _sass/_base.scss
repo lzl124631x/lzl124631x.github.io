@@ -133,17 +133,20 @@ code {
 
 code {
     padding: 1px 5px;
+    color: #c7254e;
 }
 
 pre {
     padding: 8px 12px;
     overflow-x: auto;
     white-space: pre-wrap;
+    color: #336699;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        color: inherit;
     }
 }
 
@@ -190,26 +193,20 @@ pre {
   @extend .clearfix;
 }
 
-@media (min-width: 34em) {
+@media (min-width: 768px) {
   .container {
-    max-width: 34rem;
+    max-width: 650px;
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 850px) {
   .container {
-    max-width: 45rem;
+    max-width: 700px;
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 60rem;
-  }
-}
-
-@media (min-width: 75em) {
-  .container {
-    max-width: 72.25rem;
+    max-width: 850px;
   }
 }
