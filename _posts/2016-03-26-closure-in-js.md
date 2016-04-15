@@ -10,7 +10,7 @@ tags: JavaScript
 # TODO
 
 * [JS核心系列：漫谈JS引擎的运行机制](http://www.cnblogs.com/onepixel/p/5090799.html)
-* [Closures - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [Closures - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 
 # [干货分享：让你分分钟学会 javascript 闭包](http://www.cnblogs.com/onepixel/p/5062456.html)

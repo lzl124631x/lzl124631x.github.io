@@ -108,6 +108,7 @@
     > li {
         margin-top: -1px;
         border: dashed 1px #ddd;
+
         &:first-of-type {
             border-top-left-radius: $default-border-radius;
             border-top-right-radius: $default-border-radius;
@@ -119,7 +120,7 @@
         }
 
         &:hover {
-            border-color: #169fe6;
+            border-color: $brand-color;
             position: relative;
             z-index: 2;
         }
@@ -131,9 +132,15 @@
             color: #333;
             transition: .2s color ease-in-out;
 
-            &:hover {
-                color: #0e90d2;
+            &:hover .post-title {
+                color: $brand-color;
             }
+        }
+
+        .post-title {
+            font-size: 2em;
+            text-align: center;
+            line-height: 2;
         }
 
         .post-excerpt {
@@ -143,6 +150,17 @@
         .post-meta {
             font-size: $small-font-size;
             color: $grey-color;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .post-read-more {
+            color: $brand-color;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -186,10 +204,52 @@
     .post-content {
         margin-bottom: $spacing-unit;
 
+        p {
+            margin: 1.5em 0;
+            line-height: 2;
+        }
+
+        pre,
+        code {
+            border: 0;
+            background-color: $code-bg-color;
+            font-family: inherit;
+        }
+
+        code {
+            border-radius: .2em;
+            padding: 1px 5px;
+            color: #c7254e;
+            display: inline-block;
+            line-height: 1.2;
+            font-family: "Courier New", sans-serif;
+            font-weight: bold;
+            margin: 0 .2em;
+        }
+
+        pre {
+            border-radius: $default-border-radius;
+            padding: 2em;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            color: #336699;
+
+            > code {
+                border: 0;
+                padding-right: 0;
+                padding-left: 0;
+                color: inherit;
+                font-weight: normal;
+                margin: 0;
+            }
+        }
+
+
         h1,
         h2,
         h3 {
             margin: 1em 0 .5em;
+            padding: .2em;
         }
 
         h1 {
@@ -251,51 +311,50 @@
             opacity: 1;
         }
 
-
         .my-comment {
-          background-color: #B4EB7C;
-          display: inline-block;
-          border-radius: .2em;
-          padding: .5em 1em;
-          position: relative;
-          margin: 1em 0;
-      }
+            background-color: #B4EB7C;
+            display: inline-block;
+            border-radius: .2em;
+            padding: .5em 1em;
+            position: relative;
+            margin: 1em 0;
+        }
 
-      .my-comment:before,
-      .my-comment:after {
-          position: absolute;
-          top: 14px;
-          right: 100%;
-          border: 6px solid transparent;
-          content: " ";
-      }
+        .my-comment:before,
+        .my-comment:after {
+            position: absolute;
+            top: 14px;
+            right: 100%;
+            border: 6px solid transparent;
+            content: " ";
+        }
 
-      .my-comment:after {
-          border-right-color: #B4EB7C;
-      }
+        .my-comment:after {
+            border-right-color: #B4EB7C;
+        }
 
-      a.demo-link {
-          display: inline-block;
-          color: #fff;
-          background-color: #3498db;
-          border-radius: .3em;
-          padding: .5em 1em;
-      }
+        a.demo-link {
+            display: inline-block;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: .3em;
+            padding: .5em 1em;
+        }
 
-      .todo {
-        background-color: #FF4539;
-        color: #fff;
-        padding: .5em 1em;
-        font-size: .8em;
-        border-radius: .2em;
+        .todo {
+            background-color: #FF4539;
+            color: #fff;
+            padding: .5em 1em;
+            font-size: .8em;
+            border-radius: .2em;
+        }
+
+        hr {
+            margin: 1em 0;
+            border: 0;
+            border-top: solid .5em #eaeff3;
+        }
     }
-
-    hr {
-      margin: 1em 0;
-      border: 0;
-      border-top: solid .5em #eaeff3;
-  }
-}
 }
 
 a.prev-post,

@@ -28,7 +28,7 @@ tags: Sass
 }
 ```
 
-会被转化为:
+会被转化为:<!-- more -->
 
 ```css
 .icon, .error-icon, .info-icon {

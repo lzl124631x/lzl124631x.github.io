@@ -16,6 +16,7 @@ Jekyll的markdown processor默认是kramdown. 经测试, 它:
 6. [两个有关Knockout自定义拓展方法fn的小技巧](/javascript,/knockout/2016/02/06/two-tips-about-knockout-custom-function.html)中, 列表中的代码块将一个完整的列表分割成了两部分.
 7. 在Matrix Zigzag Traversal中, cpp代码中有两个连着的`{`, 结果报错`Liquid syntax error`.
 8. 标题中的MD代码为什么不被解析?
+9. 如何支持`==highlight==`?
 
 自己用haroopad用得很顺手, 所以这些习惯都是haroopad惯出来的.
 
@@ -23,6 +24,7 @@ Jekyll的markdown processor默认是kramdown. 经测试, 它:
 
 # md中必须要两个空格才能换行?
 做如下设置即可:
+
 ```
 kramdown:
   hard_wrap: true
@@ -33,13 +35,10 @@ kramdown:
 而我发现Jekyll中设置不设置`input: GFM`是一样的, 所以我怀疑Jekyll默认启用了GFM Parser, 并且`hard_wrap`的默认值是`false`.
 
 更多信息参考:
+
 * [Kramdown Options](http://kramdown.gettalong.org/options.html)
 
 [Jekyll Default Configuration](https://jekyllrb.com/docs/configuration/#default-configuration)中提示, Jekyll不支持kramdown中的`remove_block_html_tags`和`remove_span_html_tags`两个参数.
-
-# 块级元素前面必须要有空行?
-
-# 标题后必须要空格?
 
 # 无法使用redcarpet?
 _config.yml中设置`markdown: redcarpet`就提示错误:
@@ -66,10 +65,33 @@ at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
 
 从<http://rubyinstaller.org/downloads>中下载DevKit安装exe, 然后按照<http://github.com/oneclick/rubyinstaller/wiki/Development-Kit>中的方法去安装即可. 简单来说就是解压后`ruby dk.rb init`, `ruby dk.rb install`.
 
-# 如何支持`==highlight==`?
-
 # jekyll中的categories和tags有什么区别?
 
 [What's the difference between Categories and Tags in Jekyll?](http://stackoverflow.com/questions/8675841/whats-the-difference-between-categories-and-tags-in-jekyll)
 
 跟我观察的结果一样: categories会导致url变化, 但是tags不会.
+
+# 如何引入Read More链接?
+
+jekyll原生支持这个功能, 只需要在`_config.yml`中加入:
+
+```
+excerpt_separator: "<!-- more -->"
+```
+
+即可. `excerpt_separator`的默认值是`"\n\n"`, 详见[jekyll Configuration](https://jekyllrb.com/docs/configuration/).
+
+现在我的摘要部分是用以下代码完成的:
+
+```html
+<div class="post-excerpt">
+  {{ post.excerpt | strip_html | truncate: 300 }}
+  {% if post.content | size > 300 %}
+  &nbsp;<span class="post-read-more">Read more...</span>
+  {% endif %}
+</div>
+```
+`strip_html`可以帮你移除所有html标签, 以纯文本输出. `truncate: 300`确保至多输出300个字. 仅当文章内容超过300字的时候才会添加Read more链接.
+
+
+参考: [Adding support for <!-- more --> tag to Jekyll without plugins](https://blog.omgmog.net/post/adding-support-for-more-tag-to-jekyll-without-plugins/)

@@ -90,15 +90,15 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:visited {
         color: darken($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: lighten($brand-color, 15%);
+        text-decoration: none;
     }
 }
 
@@ -117,39 +117,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-    font-family: inherit;
-}
-
-code {
-    padding: 1px 5px;
-    color: #c7254e;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    color: #336699;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-        color: inherit;
-    }
-}
-
 
 /**
  * Clearfix

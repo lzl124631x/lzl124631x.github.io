@@ -18,3 +18,6 @@ github_username:  lzl124631x
 markdown: kramdown
 kramdown:
   hard_wrap: true
+
+excerpt_separator: "<!-- more -->"
+timezone: Asia/Shanghai
