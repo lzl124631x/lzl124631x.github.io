@@ -31,7 +31,7 @@ tags: WeChat
 
 最靠谱的方法还是用状态机来做. 我现在的解决方案是: 当用户按下录音时调用`startRecord`, 然后一秒之内抬手都会提示用户"录音太短", 然后在第一秒结束时再调用`stopRecord`, 这样可以确保两个API之间的调用间隔至少一秒, 不会崩掉.
 
-![States](..\images\states.png)
+![States](\images\2016-04-15-wechat-record-bugs.png)
 
 ## WinPhone上无法录音
 
