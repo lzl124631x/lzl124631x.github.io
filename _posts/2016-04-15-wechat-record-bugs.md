@@ -5,37 +5,37 @@ date: April 15, 2016 23:00 PM
 tags: WeChat
 ---
 
-最近一直在做微信JSSDK与录音相关的功能开发, 遇到了各种奇尺大坑, 各种冷不丁地被坑一道. 大有一种让我想狂骂"微信JSSDK就是一坨SH_T"的想法.
+最近一直在做微信JSSDK与录音相关的功能开发, 遇到了各种奇尺大坑, 时不时冷不丁地被坑一道, 让我时常想嘶吼: "微信JSSDK就是个大腊鸡!!!!!!!!!!"
 
-现在工作得到阶段性成果, 故总结一下这段时间来碰到的微信JSSDK在录音方面的bug, 希望做个前车之鉴, 大家谨慎入坑.
+现在工作得到阶段性成果, 有时间休息总结下, 故来整理一下这段时间碰到的bug, 希望做个前车之鉴, 劝大家谨慎入坑.
 
 # checkJsApi
 
 功能: 判断当前客户端版本是否支持指定JS接口
 
-但是我遇到的一个不大不小的坑是: `onVoiceRecordEnd`和`onVoicePlayEnd`总是返回`false`, 即使这两个接口是被支持的!
+我遇到的一个不大不小的坑是: `onVoiceRecordEnd`和`onVoicePlayEnd`总是返回`false`, 即使这两个接口是被支持的!
 
-还有要注意的是, 这个API只是检查当前客户端版本是否**支持**该API, 与该API是否开启没有卵关系. 所以当你check某个API发现是`true`, 但是又怎么调用都不起作用的时候, 记得检查下`wx.config`中的`jsApiList`参数.
+还有要注意的是, 这个API只是检查当前客户端版本是否**支持**该API, 与该API是否开启并没有卵关系! 所以当你check某个API发现是`true`, 但是又怎么调用都不起作用的时候, 记得检查下`wx.config`中的`jsApiList`参数.
 
 # startRecord, stopRecord
 
-微信JSSDK的API都有一个大问题, 就是如果调用时间间隔过短, 就非常可能调用失败. 但是失败也就算了, **最!可!恨!的!是!不会触发`success`, `fail`或`complete`中的任何一个callback, 导致UI卡住!**
+微信JSSDK的API都有一个大问题, 就是如果调用时间间隔过短, 就非常可能产生无效调用. 无效调用的意思是, 虽然你调用了某个API, 但是相当于没调用, **它不会触发`success`, `fail`或`complete`中的任何一个callback!**
 
-打比方说, 你做一个"按下录音, 抬手停止录音"的功能, 如果用户点击了一下录音按钮, 相当于快速地`startRecord`然后`stopRecord`, 那么`stopRecord`是极有可能失败的, 而且任何callback不会执行.
+打比方说, 你做一个"按下录音, 抬手停止录音"的功能, 如果用户点击了一下录音按钮, 相当于快速地`startRecord`然后`stopRecord`, 那么`stopRecord`是极有可能是无效的, 不会执行任何callback.
 
-然而问题还不止这个, 微信JSSDK的调用是异步的, 也就是你调用`startRecord`和`startRecord`的`success`的callback被调用是有时间间隔的. 这意味着, 用户点击按钮可能会造成: 虽然是先调用`startRecord`再调用`stopRecord`, 但是可能`stopRecord`先于`startRecord`调用成功!
+然而问题还不止这个, 微信JSSDK的调用是异步的. 举例来说就是, 你调用`startRecord`的时间, 和`startRecord`的`success`的callback被执行的时间可能间隔了若干毫秒甚至秒. 这意味着, 用户点击按钮可能会造成: 虽然是先调用`startRecord`再调用`stopRecord`, 但是可能`stopRecord`先于`startRecord`调用成功!
 
-我做了各种尝试, 微信JSSDK太脆弱, 频繁操作就会玩儿坏. 所以我最终的结论是: ==一定要在微信JSSDK外面包一层, 控制API的调用频率.==
+我做了各种尝试后意识到, 微信JSSDK太脆弱, 频繁操作就会被玩儿坏. 所以我最终的结论是: ==一定要在微信JSSDK外面包一层, 控制API的调用频率.==
 
-以录音为例, 我曾经的解决方案见[这里](http://www.cnblogs.com/7z7chn/p/4973596.html), 但是后来发现频繁地调用`stopRecord`还是会有问题.
+以录音为例, (我曾经的解决方案见[这里](http://www.cnblogs.com/7z7chn/p/4973596.html), 但是后来发现频繁地调用`stopRecord`还是会有问题) 我现在的解决方案是: 当用户按下录音时调用`startRecord`, 然后一秒之内抬手都会提示用户"录音太短", 然后在第一秒结束时再调用`stopRecord`, 这样可以确保两个API之间的调用间隔至少一秒, 不会崩掉.
 
-最靠谱的方法还是用状态机来做. 我现在的解决方案是: 当用户按下录音时调用`startRecord`, 然后一秒之内抬手都会提示用户"录音太短", 然后在第一秒结束时再调用`stopRecord`, 这样可以确保两个API之间的调用间隔至少一秒, 不会崩掉.
+最靠谱的方法还是用状态机来做, 我目前的状态机如下图. 图中没有包含`uploadVoice`, `uploadVoice`期间应该不允许用户操作按钮.
 
 ![States](\images\2016-04-15-wechat-record-bugs.png)
 
 ## WinPhone上无法录音
 
-通过WinPhone访问微信官方测试页面<http://demo.open.weixin.qq.com/jssdk>尝试调用录音接口, 然而没卵用!!!! (WinPhone用户再次受到一万点伤害)
+通过WinPhone访问微信官方测试页面<http://demo.open.weixin.qq.com/jssdk>尝试调用录音接口, 然而并没有卵用!!!! (WinPhone用户再次受到一万点伤害)
 
 好, 接下来只讨论iPhone和Android用户...
 
@@ -90,7 +90,7 @@ Android: 我没有刷新按钮... (Android用户起立鼓掌)
 
 这是一个微信JSSDK炒鸡恶心的BUG... 只在iPhone出现: 在你使用的是**外放**(就是声音是从手机下方的小音箱里面放出来的)的前提下, 录音之后, 播放audio/video声音会转而从**听筒**(就是不插耳机打电话是耳朵对着的位置)播放出来. 如果你不知道的话, 会以为录音之后播放audio/video声音变得特别小.
 
-但是, 如果你用耳机的话则不会受到影响, 因为声音会始终从耳机里播放出来. (难道你要我告诉用户, "请带上耳机使用本产品嘛?!")
+但是, 如果你用耳机的话则不会受到影响, 因为声音会始终从耳机里播放出来. (难道你要我告诉用户, "请带上耳机使用本产品"嘛?!)
 
 后来我们发现`playVoice`一次之后, audio/video的声音就会, 神奇地, 又从外放里播放出来了... *无语凝噎.jpg*
 
@@ -124,7 +124,7 @@ Android: 我没有刷新按钮... (Android用户起立鼓掌)
 
 这对于"长按录音"操作来说, 非常影响体验, 因为用户按到一半需要松手去点对话框.
 
-如果用户一不小心点了"否", 那你可以去哭了, 接下的录音API会一直失败.
+如果用户一不小心点了"否", 那你可以去哭了, 接下的录音API调用会一直失败.
 
 如果用户点了"是", 接下来, 至少一段时间内, 用户可以安心地录音了, 不会弹出对话框.
 
