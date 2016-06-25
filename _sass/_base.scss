@@ -1,9 +1,9 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+ body, h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
+ body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -28,10 +28,10 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+ h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre,
+ ul, ol, dl, figure,
+ %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -40,7 +40,7 @@ ul, ol, dl, figure,
 /**
  * Images
  */
-img {
+ img {
     max-width: 100%;
     vertical-align: middle;
 }
@@ -50,7 +50,7 @@ img {
 /**
  * Figures
  */
-figure > img {
+ figure > img {
     display: block;
 }
 
@@ -63,15 +63,16 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
+ ul, ol {
+    margin-left: 0;
+    list-style: none;
 }
 
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
-    }
+     margin-bottom: 0;
+ }
 }
 
 
@@ -79,7 +80,7 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a {
+ a {
     color: $brand-color;
     text-decoration: underline;
 
@@ -107,7 +108,7 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
+ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
@@ -121,7 +122,7 @@ blockquote {
 /**
  * Clearfix
  */
-.clearfix {
+ .clearfix {
     &:after {
         content: "";
         display: table;
@@ -134,7 +135,7 @@ blockquote {
 /**
  * Icons
  */
-.icon {
+ .icon {
 
     > svg {
         display: inline-block;
@@ -151,7 +152,7 @@ blockquote {
 /**
  * Container
  */
-.container {
+ .container {
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   margin-right: auto;
@@ -163,17 +164,52 @@ blockquote {
 @media (min-width: 768px) {
   .container {
     max-width: 650px;
-  }
+}
 }
 
 @media (min-width: 850px) {
   .container {
     max-width: 700px;
-  }
+}
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 850px;
+}
+}
+
+.item {
+    padding: $spacing-unit;
+    margin-top: -1px;
+    border: dashed 1px #ddd;
+
+    &:first-of-type {
+        border-top-left-radius: $default-border-radius;
+        border-top-right-radius: $default-border-radius;
+    }
+
+    &:last-of-type {
+        border-bottom-left-radius: $default-border-radius;
+        border-bottom-right-radius: $default-border-radius;
+    }
+
+    &:hover {
+        border-color: $brand-color;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.page-heading {
+    text-align: center;
+    .title {
+      font-size: 2em;
+      font-variant: small-caps;
   }
+
+  .desc {
+      color: #aaa;
+  }
+  margin-bottom: $spacing-unit/2;
 }

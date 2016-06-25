@@ -1,0 +1,15 @@
+---
+layout: page
+title: Reposts
+desc: I repost some useful posts here.
+permalink: /reposts/
+order: 2
+---
+<ul class="repost-content">
+  {% for repost in site.data.reposts %}
+  <li class="item repost-item">
+    <a class="title" href="{{ repost.url }}">{{ repost.title }}</a>
+    <div class="desc">评价: {{ repost.desc }}</div>
+  </li>
+  {% endfor %}
+</ul>
