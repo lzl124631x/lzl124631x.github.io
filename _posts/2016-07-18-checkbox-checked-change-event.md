@@ -4,6 +4,7 @@ title:  有关checkbox的checked属性和change事件
 date: July 18, 2016 8:24 PM
 tags: JavaScript
 ---
+
 # jquery中的`attr`和`prop`有什么区别?
 
 > To retrieve and change DOM properties such as the checked, selected, or disabled state of form elements, use the .prop() method.
