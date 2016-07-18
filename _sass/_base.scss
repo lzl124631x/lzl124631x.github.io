@@ -3,7 +3,7 @@
  */
  body, h1, h2, h3, h4, h5, h6,
  p, blockquote, pre, hr,
- dl, dd, ol, ul, figure {
+ dl, dd, figure {
     margin: 0;
     padding: 0;
 }
@@ -63,16 +63,11 @@ figcaption {
 /**
  * Lists
  */
- ul, ol {
-    margin-left: 0;
-    list-style: none;
-}
-
-li {
+ li {
     > ul,
     > ol {
-     margin-bottom: 0;
- }
+       margin-bottom: 0;
+   }
 }
 
 
@@ -179,25 +174,31 @@ li {
 }
 }
 
-.item {
-    padding: $spacing-unit;
-    margin-top: -1px;
-    border: dashed 1px #ddd;
+.item-list {
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
 
-    &:first-of-type {
-        border-top-left-radius: $default-border-radius;
-        border-top-right-radius: $default-border-radius;
-    }
+    .item {
+        padding: $spacing-unit;
+        margin-top: -1px;
+        border: dashed 1px #ddd;
 
-    &:last-of-type {
-        border-bottom-left-radius: $default-border-radius;
-        border-bottom-right-radius: $default-border-radius;
-    }
+        &:first-of-type {
+            border-top-left-radius: $default-border-radius;
+            border-top-right-radius: $default-border-radius;
+        }
 
-    &:hover {
-        border-color: $brand-color;
-        position: relative;
-        z-index: 2;
+        &:last-of-type {
+            border-bottom-left-radius: $default-border-radius;
+            border-bottom-right-radius: $default-border-radius;
+        }
+
+        &:hover {
+            border-color: $brand-color;
+            position: relative;
+            z-index: 2;
+        }
     }
 }
 
