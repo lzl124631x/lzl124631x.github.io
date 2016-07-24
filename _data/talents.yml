@@ -1,0 +1,21 @@
+- name: TJ Holowaychuk
+  github: https://github.com/tj
+  desc: "前node大师, 现转战Go."
+- name: 阮一峰
+  blog: http://www.ruanyifeng.com/blog/
+  github: https://github.com/ruanyf
+  desc: "经常搜着搜着问题就进了阮一峰的博客, 质量兼备的博客."
+- name: 尤小右 (尤雨溪)
+  blog: http://evanyou.me
+  github: https://github.com/yyx990803
+  desc: "目前在 Google Creative Lab 就职。vue.js 项目作者。"
+- name: David Walsh 
+  blog: https://davidwalsh.name
+  desc: "Mozilla员工, 博客很好看"
+- name: 代码家 (林惠文)
+  blog: http://daimajia.com/
+  github: https://github.com/daimajia
+  desc: "Android作库达人."
+- name: 汪宇杰 Edi.Wang
+  blog: http://edi.wang/
+  desc: "微软人, 小学四年级就开始接触计算机, 独立开发个人网站, 熟悉WinPhone应用开发."

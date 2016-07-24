@@ -1,9 +1,4 @@
-/**
- * Reset some basic elements
- */
- body, h1, h2, h3, h4, h5, h6,
- p, blockquote, pre, hr,
- dl, dd, ol, ul, figure {
+* {
     margin: 0;
     padding: 0;
 }
@@ -35,7 +30,9 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-
+pre {
+    margin-top: $spacing-unit / 2;
+}
 
 /**
  * Images
@@ -43,8 +40,9 @@
  img {
     max-width: 100%;
     vertical-align: middle;
+    border-radius: $default-border-radius;
+    border: .3em solid $grey-color-light;
 }
-
 
 
 /**
@@ -64,15 +62,14 @@ figcaption {
  * Lists
  */
  ul, ol {
-    margin-left: 0;
-    list-style: none;
+    margin-left: 1em;
 }
 
 li {
     > ul,
     > ol {
-     margin-bottom: 0;
- }
+       margin-bottom: 0;
+   }
 }
 
 
@@ -116,6 +113,26 @@ li {
 
     > :last-child {
         margin-bottom: 0;
+    }
+}
+
+/**
+ * Table
+ */
+
+table {
+    border-collapse: separate;
+    border-radius: $default-border-radius;
+    border: .3em solid $grey-color-light;
+
+    tr:first-child th,
+    tr:first-child td {
+        border: 0;
+    }
+
+    th, td {
+        padding: .3em .5em;
+        border-top: solid 1px #dfdfdf;
     }
 }
 
@@ -179,25 +196,29 @@ li {
 }
 }
 
-.item {
-    padding: $spacing-unit;
-    margin-top: -1px;
-    border: dashed 1px #ddd;
+.list-group {
+    margin-left: 0;
+    list-style: none;
+    .list-group-item {
+        padding: $spacing-unit;
+        margin-top: -1px;
+        border: dashed 1px #ddd;
 
-    &:first-of-type {
-        border-top-left-radius: $default-border-radius;
-        border-top-right-radius: $default-border-radius;
-    }
+        &:first-of-type {
+            border-top-left-radius: $default-border-radius;
+            border-top-right-radius: $default-border-radius;
+        }
 
-    &:last-of-type {
-        border-bottom-left-radius: $default-border-radius;
-        border-bottom-right-radius: $default-border-radius;
-    }
+        &:last-of-type {
+            border-bottom-left-radius: $default-border-radius;
+            border-bottom-right-radius: $default-border-radius;
+        }
 
-    &:hover {
-        border-color: $brand-color;
-        position: relative;
-        z-index: 2;
+        &:hover {
+            border-color: $brand-color;
+            position: relative;
+            z-index: 2;
+        }
     }
 }
 

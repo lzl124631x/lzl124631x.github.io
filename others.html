@@ -7,19 +7,30 @@ order: 4
 ---
 
 <div class="others">
-  <div class="title">Blogs</div>
-  <ul class="blogs">
-    {% for blog in site.data.blogs %}
-    <li class="item"><a href="{{ blog.url }}">{{ blog.name }}</a>
-      <span class="desc">{{ blog.desc }}</span>
+  <div class="title">Talents</div>
+  <ul class="list-group talents">
+    {% for talent in site.data.talents %}
+    <li class="list-group-item">
+      <div class="name">{{ talent.name }}</div>
+      {% if talent.blog %}
+      <div class="entry">
+        blog: <a href="{{ talent.blog }}">{{ talent.blog }}</a>
+      </div>
+      {% endif %}
+      {% if talent.github %}
+      <div class="entry">
+        github: <a href="{{ talent.github }}">{{ talent.github }}</a>
+      </div>
+      {% endif %}
+      <div class="desc">{{ talent.desc }}</div>
     </li>
     {% endfor %}
   </ul>
   
   <div class="title">Wisdoms</div>
-  <ul class="wisdoms">
+  <ul class="list-group wisdoms">
     {% for wisdom in site.data.wisdoms %}
-    <li class="item">
+    <li class="list-group-item">
       <div class="by">{% if wisdom.by %}{{ wisdom.by }}{% else %}Anonymous{%endif%}:</div>
       <div class="text">{{ wisdom.text }}</div>
     </li>

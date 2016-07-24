@@ -102,9 +102,6 @@
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
-
     > li {
         .post-link {
             display: block;
@@ -118,9 +115,8 @@
         }
 
         .post-title {
-            font-size: 2em;
+            font-size: 1.5em;
             text-align: center;
-            line-height: 2;
         }
 
         .post-excerpt {
@@ -163,6 +159,7 @@
     padding: 2em 1em;
     border: dashed 1px #ddd;
     border-radius: $default-border-radius;
+    counter-reset: h1 0;
 
     .post-header {
         margin-bottom: $spacing-unit;
@@ -199,10 +196,10 @@
         code {
             border-radius: .2em;
             padding: 1px 5px;
-            color: #c7254e;
+            color: $code-text-color;
             display: inline-block;
             line-height: 1.2;
-            font-family: "Courier New", sans-serif;
+            font-family: $code-font-family;
             font-weight: bold;
             margin: 0 .2em;
         }
@@ -235,6 +232,12 @@
         h1 {
             font-size: 1.6em;
             border-bottom: dashed 1px #dfdfdf;
+            counter-increment: h1;
+            counter-reset: h2 0;
+        }
+
+        h1:before {
+            content: counter(h1) '. ';
         }
 
         h1:after {
@@ -244,6 +247,12 @@
         h2 {
             font-size: 1.4em;
             border: none;
+            counter-increment: h2;
+            counter-reset: h3 0;
+        }
+
+        h2:before {
+            content: counter(h1) '.' counter(h2) '. ';
         }
 
         h2:after {
@@ -253,6 +262,12 @@
         h3 {
             font-size: 1.2em;
             border: none;
+            counter-increment: h3;
+            counter-reset: h4 0;
+        }
+
+        h3:before {
+            content: counter(h1) '.' counter(h2) '.' counter(h3) '. ';
         }
 
         h3:after {
@@ -262,6 +277,12 @@
         h4 {
             font-size: 1.1em;
             border: none;
+            counter-increment: h4;
+            counter-reset: h5 0;
+        }
+
+        h4:before {
+            content: counter(h1) '.' counter(h2) '.' counter(h3) '.' counter(h4) '. ';
         }
 
         h4:after {

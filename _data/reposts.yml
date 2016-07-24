@@ -1,3 +1,14 @@
-- title: 图解：如何在Windows Azure上搭建SSTP VPN（你们懂的）
-  url: http://edi.wang/Post/2014/3/9/setup-sstp-windows-azure
-  desc: 当了这么久的程序猿一直没有搭建过自己的VPN, 深感羞愧. 参考这篇文章总算成功了!
+- posts:
+  - title: 图解：如何在Windows Azure上搭建SSTP VPN（你们懂的）
+    url: http://edi.wang/Post/2014/3/9/setup-sstp-windows-azure
+  desc: "当了这么久的程序猿一直没有搭建过自己的VPN, 深感羞愧. 参考这篇文章总算成功了!"
+- posts:
+  - title: Flex 布局教程：语法篇
+    url: http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+  - title: Flex 布局教程：实例篇
+    url: http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+  - title: A Visual Guide to CSS3 Flexbox Properties
+    url: https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+  - title: A Complete Guide to Flexbox
+    url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  desc: 初学flex布局
