@@ -7,6 +7,7 @@ order: 4
 ---
 
 <div class="others">
+<<<<<<< HEAD
   <div class="title">Talents</div>
   <ul class="list-group talents">
     {% for talent in site.data.talents %}
@@ -23,12 +24,23 @@ order: 4
       </div>
       {% endif %}
       <div class="desc">{{ talent.desc }}</div>
+=======
+  <div class="title">Blogs</div>
+  <ul class="blogs item-list">
+    {% for blog in site.data.blogs %}
+    <li class="item"><a href="{{ blog.url }}">{{ blog.name }}</a>
+      <span class="desc">{{ blog.desc }}</span>
+>>>>>>> origin/master
     </li>
     {% endfor %}
   </ul>
   
   <div class="title">Wisdoms</div>
+<<<<<<< HEAD
   <ul class="list-group wisdoms">
+=======
+  <ul class="wisdoms item-list">
+>>>>>>> origin/master
     {% for wisdom in site.data.wisdoms %}
     <li class="list-group-item">
       <div class="by">{% if wisdom.by %}{{ wisdom.by }}{% else %}Anonymous{%endif%}:</div>
