@@ -1,21 +1,12 @@
-<<<<<<< HEAD
 * {
-=======
-/**
- * Reset some basic elements
- */
- body, h1, h2, h3, h4, h5, h6,
- p, blockquote, pre, hr,
- dl, dd, figure {
->>>>>>> origin/master
     margin: 0;
     padding: 0;
 }
 
 /**
- * Basic styling
- */
- body {
+* Basic styling
+*/
+body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -30,12 +21,12 @@
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
- h1, h2, h3, h4, h5, h6,
- p, blockquote, pre,
- ul, ol, dl, figure,
- %vertical-rhythm {
+* Set `margin-bottom` to maintain vertical rhythm
+*/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -44,9 +35,9 @@ pre {
 }
 
 /**
- * Images
- */
- img {
+* Images
+*/
+img {
     max-width: 100%;
     vertical-align: middle;
     border-radius: $default-border-radius;
@@ -55,9 +46,9 @@ pre {
 
 
 /**
- * Figures
- */
- figure > img {
+* Figures
+*/
+figure > img {
     display: block;
 }
 
@@ -68,38 +59,34 @@ figcaption {
 
 
 /**
- * Lists
- */
-<<<<<<< HEAD
- ul, ol {
+* Lists
+*/
+ul, ol {
     margin-left: 1em;
 }
 
 li {
-=======
- li {
->>>>>>> origin/master
     > ul,
     > ol {
-       margin-bottom: 0;
-   }
+     margin-bottom: 0;
+ }
 }
 
 
 
 /**
- * Headings
- */
- h1, h2, h3, h4, h5, h6 {
+* Headings
+*/
+h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
 
 
 /**
- * Links
- */
- a {
+* Links
+*/
+a {
     color: $brand-color;
     text-decoration: underline;
 
@@ -116,9 +103,9 @@ li {
 
 
 /**
- * Blockquotes
- */
- blockquote {
+* Blockquotes
+*/
+blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
@@ -130,8 +117,8 @@ li {
 }
 
 /**
- * Table
- */
+* Table
+*/
 
 table {
     border-collapse: separate;
@@ -150,9 +137,9 @@ table {
 }
 
 /**
- * Clearfix
- */
- .clearfix {
+* Clearfix
+*/
+.clearfix {
     &:after {
         content: "";
         display: table;
@@ -163,9 +150,9 @@ table {
 
 
 /**
- * Icons
- */
- .icon {
+* Icons
+*/
+.icon {
 
     > svg {
         display: inline-block;
@@ -180,55 +167,35 @@ table {
 }
 
 /**
- * Container
- */
- .container {
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  margin-right: auto;
-  margin-left: auto;
+* Container
+*/
+.container {
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    margin-right: auto;
+    margin-left: auto;
 
-  @extend .clearfix;
+    @extend .clearfix;
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 650px;
-}
+    .container {
+        max-width: 650px;
+    }
 }
 
 @media (min-width: 850px) {
-  .container {
-    max-width: 700px;
-}
+    .container {
+        max-width: 700px;
+    }
 }
 
 @media (min-width: 1024px) {
-  .container {
-    max-width: 850px;
+    .container {
+        max-width: 850px;
+    }
 }
-}
 
-<<<<<<< HEAD
-.list-group {
-    margin-left: 0;
-    list-style: none;
-    .list-group-item {
-        padding: $spacing-unit;
-        margin-top: -1px;
-        border: dashed 1px #ddd;
-
-        &:first-of-type {
-            border-top-left-radius: $default-border-radius;
-            border-top-right-radius: $default-border-radius;
-        }
-
-        &:last-of-type {
-            border-bottom-left-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
-        }
-
-=======
 .item-list {
     margin-left: 0;
     list-style: none;
@@ -249,7 +216,6 @@ table {
             border-bottom-right-radius: $default-border-radius;
         }
 
->>>>>>> origin/master
         &:hover {
             border-color: $brand-color;
             position: relative;
