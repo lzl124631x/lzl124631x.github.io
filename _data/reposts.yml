@@ -12,3 +12,11 @@
   - title: A Complete Guide to Flexbox
     url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   desc: 初学flex布局
+- posts:
+  - title: 这是我见过画得最棒的彩铅猫咪！
+    url: http://www.zcool.com.cn/work/ZMTY0MTM4MDg=/1.html
+  desc: "作者祥雷. 太diao了, 人肉照相机. 更多见<a href='http://www.zcool.com.cn/u/277766/?mycate=0&type=0&sort=0&p=1#titleMaoDian'>祥雷的站酷个人主页</a>"
+- posts:
+  - title: 一个简单奇怪的学习技巧，可以帮助你学习任何东西
+    url: http://www.jianshu.com/p/2f6cd2efec9b
+  desc: "不断有意识地进行自我测验, 对长期记忆更加有利"
