@@ -14,8 +14,8 @@ order: 1
       <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
 
       <div class="post-excerpt">
-        {{ post.excerpt | strip_html | truncate: 300 }}
-        {% if post.content | size > 300 %}
+        {{ post.excerpt | strip_html | truncate: site.max_excerpt_len }}
+        {% if post.content | size > site.max_excerpt_len %}
         &nbsp;<span class="post-read-more">Read more...</span>
         {% endif %}
       </div>
