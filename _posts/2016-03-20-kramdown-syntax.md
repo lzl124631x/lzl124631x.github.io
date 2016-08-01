@@ -5,7 +5,7 @@ date:   March 20, 2016 11:23 PM
 tags: Markdown Kramdown
 ---
 
-## [Headers](http://kramdown.gettalong.org/syntax.html#headers)
+# [Headers](http://kramdown.gettalong.org/syntax.html#headers)
 
 Setext Style (`---`)和atx Style (`#`).
 
@@ -25,7 +25,7 @@ para
 
 规则就是: kramdown会先尝试将`---`当做Setext header解析, 剩下的`---`再当做水平线解析.
 
-## [Attribute List Definitions (ALD)](http://kramdown.gettalong.org/syntax.html#attribute-list-definitions)
+# [Attribute List Definitions (ALD)](http://kramdown.gettalong.org/syntax.html#attribute-list-definitions)
 源自Maruku语法. 示例如下:
 
 ```
@@ -70,7 +70,7 @@ reference name需要以字母或数字开头, 之后可以是字母, 数字或�
 
 如果多个ALD使用了同一个reference name, 那么这些ALD的定义会被合并到一起.
 
-## [End-Of-Block Marker](http://kramdown.gettalong.org/syntax.html#eob-marker)
+# [End-Of-Block Marker](http://kramdown.gettalong.org/syntax.html#eob-marker)
 非标准MD语法. EOB就是仅包含`^`的一行, 它可以标志一个块元素的结束. 如果`^`前面没有块元素, `^`会被忽略.
 
 下面这段MD会生成**一个**列表, 包含两个元素.
@@ -88,9 +88,9 @@ reference name需要以字母或数字开头, 之后可以是字母, 数字或�
 * list two
 ```
 
-## [Code Blocks](http://kramdown.gettalong.org/syntax.html#code-blocks)
+# [Code Blocks](http://kramdown.gettalong.org/syntax.html#code-blocks)
 
-### Standard Code Blocks
+## Standard Code Blocks
 4个空格或1个tab的缩进标志着代码块的开始. 接下来的非空代码行无论是否由空格/tab开始, 都会被认为是代码块的一部分 (因为Kram的代码块支持换行, 标准MD不支持). 没有缩进的代码行会被放到上一行的行尾, 以一个空格分隔. 最后, 输出时每行的缩进(4个空格/1个tab)都会被删除.
 
 仅被空白行分隔的两个代码块会被合并.
@@ -109,7 +109,7 @@ reference name需要以字母或数字开头, 之后可以是字母, 数字或�
     This one is separate.
 ```
 
-### Fenced Code Blocks
+## Fenced Code Blocks
 源自PHP Markdown Extra语法, 非标准MD语法.
 
 kramdown中, 可以使用连续的3个或更多的`~`符号作为代码块的起始行和结束行. 结束行必须至少有起始行有相同多的`~`. 起始行和结束行之间的代码会被作为代码原样输出.
@@ -130,7 +130,7 @@ code with tildes
 ~~~~~~~~~~~~~~~~~~
 ```
 
-### Language of Code Blocks
+## Language of Code Blocks
 使用IAL可以指定代码块所用的语言.
 
 ```
@@ -152,9 +152,9 @@ end
 ~~~
 ```
 
-## [Inline Attribute Lists](http://kramdown.gettalong.org/syntax.html#inline-attribute-lists)
+# [Inline Attribute Lists](http://kramdown.gettalong.org/syntax.html#inline-attribute-lists)
 
-### Block Inline Attribute Lists
+## Block Inline Attribute Lists
 来自Maruku语法, 非标准MD语法.
 
 Block IAL与ALD有相同的结构, 只是`:reference name:`的部分被替代为了`:`. Block IAL必须被直接放置在被修饰的块元素的前面或后面. 如果一个Block IAL上下紧挨着两个块元素, 则它修饰的是前面的块元素. 其他情况下(如被空白行包围)的Block IAL都会被忽略.
@@ -175,7 +175,7 @@ A simple paragraph with an ID attribute.
     Some code here
 ```
 
-### Span Inline Attribute Lists
+## Span Inline Attribute Lists
 来自Maruku语法, 非标准MD语法.
 
 除了不允许前后有空格, Span IAL与Block IAL结构相同. Span IAL必须紧挨着被修饰的行内元素的前后, 否则会被忽略.
