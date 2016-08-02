@@ -11,7 +11,7 @@ order: 2
   <li class="item repost-item">
     {% for post in repost.posts %}
     <div class="title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a class="link" href="{{ post.url }}">{{ post.title }}</a>
     </div>
     {% endfor %}
     <div class="desc">评价: {{ repost.desc }}</div>

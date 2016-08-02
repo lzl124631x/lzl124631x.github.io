@@ -68,8 +68,8 @@ ul, ol {
 li {
     > ul,
     > ol {
-     margin-bottom: 0;
- }
+       margin-bottom: 0;
+   }
 }
 
 
@@ -196,31 +196,35 @@ table {
     }
 }
 
+.card {
+    border-radius: $default-border-radius;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+    background-color: #fff;
+    padding: $spacing-unit;
+}
+
+.link {
+    &,
+    &:visited {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        transition: .2s color ease-in-out;
+    }
+
+    &:hover {
+        color: $brand-color;
+    }
+}
+
 .item-list {
     margin-left: 0;
     list-style: none;
     padding-left: 0;
 
     .item {
-        padding: $spacing-unit;
-        margin-top: -1px;
-        border: dashed 1px #ddd;
-
-        &:first-of-type {
-            border-top-left-radius: $default-border-radius;
-            border-top-right-radius: $default-border-radius;
-        }
-
-        &:last-of-type {
-            border-bottom-left-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
-        }
-
-        &:hover {
-            border-color: $brand-color;
-            position: relative;
-            z-index: 2;
-        }
+        @extend .card;
+        margin-bottom: $spacing-unit;
     }
 }
 

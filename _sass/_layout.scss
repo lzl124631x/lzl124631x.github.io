@@ -104,14 +104,7 @@
 .post-list {
     > li {
         .post-link {
-            display: block;
-            text-decoration: none;
-            color: #333;
-            transition: .2s color ease-in-out;
-
-            &:hover .post-title {
-                color: $brand-color;
-            }
+            @extend .link;
         }
 
         .post-title {
@@ -157,8 +150,7 @@
  */
  .post {
     padding: 2em 1em;
-    border: dashed 1px #ddd;
-    border-radius: $default-border-radius;
+    @extend .card;
     counter-reset: h1 0;
 
     .post-header {
