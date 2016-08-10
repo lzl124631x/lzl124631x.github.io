@@ -8,4 +8,4 @@ The following directories and their contents are Copyright Richard LIU (@lzl1246
 * _posts/
 * images/
 
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://lzl124631x.github.io/7z7blog/ would be appreciated, but is not required.
+All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://lzl124631x.github.io/ would be appreciated, but is not required.
