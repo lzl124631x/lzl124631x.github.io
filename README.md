@@ -1,5 +1,5 @@
 # 7z7blog
-It's my personal blog, you can view it at <lzl124631x.github.io>. I'll write about what I've learned on my way to a full-stack dev. Hope you enjoy it.
+It's my personal blog, you can view it at http://lzl124631x.github.io/. I'll write about what I've learned on my way to a full-stack dev. Hope you enjoy it.
 
 # License
 
