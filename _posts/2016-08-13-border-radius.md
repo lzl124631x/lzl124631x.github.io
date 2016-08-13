@@ -137,5 +137,5 @@ border-radius: 100% / 50% 0 0 50%;
 # 参考
 
 1. [用css3绘制你需要的几何图形](http://www.cnblogs.com/wdlhao/p/5751211.html)
-1. [border-radius - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
-1. [CSS Backgrounds and Borders Module Level 3 | W3C](https://www.w3.org/TR/css3-background/#border-radius)
+1. [border-radius - CSS \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+1. [CSS Backgrounds and Borders Module Level 3 \| W3C](https://www.w3.org/TR/css3-background/#border-radius)
