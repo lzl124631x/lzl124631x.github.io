@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "有关border-radius"
+title: "border-radius的水平和竖直半径"
 date: August 13, 2016 2:50 PM
 tags: css
 ---
