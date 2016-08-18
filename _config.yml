@@ -15,6 +15,9 @@ url: "http://liuzhenglaichn.github.io" # the base hostname & protocol for your s
 github_username:  lzl124631x
 
 # Build settings
+# gems:
+#   - jekyll-paginate
+# paginate: 5
 markdown: kramdown
 kramdown:
   hard_wrap: true
