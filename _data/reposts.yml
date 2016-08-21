@@ -22,9 +22,9 @@
   desc: "不断有意识地进行自我测验, 对长期记忆更加有利"
 - posts:
   - title: 这个网站简直太酷了! 完美地结合了音乐和交互!
-  - url: http://because-recollection.com/
-  - desc: "我特别喜欢major-lazer那个效果, 太帅了."
+    url: http://because-recollection.com/
+  desc: "我特别喜欢major-lazer那个效果, 太帅了."
 - posts:
   - title: WORKSHOP. CHROMEEXPERIMENTS
-  - url: https://workshop.chromeexperiments.com/
-  - desc: "很酷的样子, 里面有two.js, Tailbone, dat.GUI, three.js, stats.js"
+    url: https://workshop.chromeexperiments.com/
+  desc: "很酷的样子, 里面有two.js, Tailbone, dat.GUI, three.js, stats.js"
