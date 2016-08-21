@@ -173,6 +173,8 @@ $header-height: 56px;
     padding: 2em;
     @extend .card;
     counter-reset: h1 0;
+    position: relative;
+    z-index: 1;
 
     .post-header {
         margin-bottom: $spacing-unit;
@@ -371,14 +373,36 @@ $header-height: 56px;
     }
 }
 
+.pre-post-nav {
+    a.prev-post,
+    a.next-post {
+        padding-bottom: 1.5em;
+        margin-bottom: -1em;
+    }
+}
+
+.post-post-nav {
+    a.prev-post,
+    a.next-post {
+        padding-top: 1.5em;
+        margin-top: -1em;
+    }
+}
+
 a.prev-post,
 a.next-post {
     display: inline-block;
-    color: #fff;
-    background-color: #3498db;
+    color: #888;
+    background-color: #fafafa;
     border-radius: .3em;
     padding: .5em 1em;
-    margin: 1em 0;
+    text-decoration: none;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+    }
 }
 
 a.prev-post {
@@ -395,4 +419,8 @@ a.next-post {
     &:after {
         content: '\203A';
     }
+}
+
+#disqus_thread {
+    margin-top: 2em;
 }
