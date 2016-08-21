@@ -25,3 +25,10 @@ kramdown:
 excerpt_separator: "<!-- more -->"
 
 max_excerpt_len: 100
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
