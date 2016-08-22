@@ -68,8 +68,8 @@ ul, ol {
 li {
     > ul,
     > ol {
-       margin-bottom: 0;
-   }
+        margin-bottom: 0;
+    }
 }
 
 
@@ -209,6 +209,7 @@ table {
         display: block;
         text-decoration: none;
         color: #333;
+        -webkit-transition: .2s color ease-in-out;
         transition: .2s color ease-in-out;
     }
 
