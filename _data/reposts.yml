@@ -35,4 +35,8 @@
 - posts:
   - title: All you need to know about CSS Transitions
     url: https://blog.alexmaccaw.com/css-transitions
+  - title: cubic-bezier.com
+    url: http://cubic-bezier.com/
+  - title: easings.net
+    url: http://easings.net/
   - desc: "看boostrap/transition.js时看到的, 不错的有关transition的文章"
