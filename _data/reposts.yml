@@ -28,3 +28,7 @@
   - title: WORKSHOP. CHROMEEXPERIMENTS
     url: https://workshop.chromeexperiments.com/
   desc: "很酷的样子, 里面有two.js, Tailbone, dat.GUI, three.js, stats.js"
+- posts:
+  - title: Intro to WebGL with Three.js
+    url: http://davidscottlyons.com/threejs/presentations/frontporch14/
+  desc: "很赞的WebGL/Three.js演示文稿"
