@@ -39,4 +39,8 @@
     url: http://cubic-bezier.com/
   - title: easings.net
     url: http://easings.net/
-  - desc: "看boostrap/transition.js时看到的, 不错的有关transition的文章"
+  desc: "看boostrap/transition.js时看到的, 不错的有关transition的文章"
+- posts:
+  - title: "Github上最受关注的前端大牛，快来膜拜吧！"
+    url: http://code.csdn.net/news/2820990
+  desc: "向大神学习"
