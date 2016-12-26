@@ -22,6 +22,7 @@ After each scanning of `i`-th `s1` segment, we will have
 It is the `nextIndex` that is the denotation of the repetitive pattern.
 
 **Example:**
+
 ```
 Input:
 s1="abacb", n1=6
