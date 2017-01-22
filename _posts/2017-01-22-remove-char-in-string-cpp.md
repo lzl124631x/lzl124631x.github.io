@@ -71,7 +71,7 @@ template <class InputIterator, class OutputIterator, class T>
                               OutputIterator result, const T& val);
 ```
 
-它会把`[first, last)`之间不等于`val`的元素都像从`result`开始的容器拷贝.
+它会把`[first, last)`之间不等于`val`的元素都向从`result`开始的容器拷贝.
 
 
 ```cpp
